@@ -36,9 +36,9 @@ public class Main {
     public static void healing() {
         Random random = new Random();
         int runNum = random.nextInt(heroesDamage.length);
-        if (heroesHealth[2] < 100 && heroesHealth[3] > 0 && heroesHealth[2] > 0) {
-            heroesHealth[2] = heroesHealth[2] + medicHeal;
-            System.out.println("Medic healed " + heroesSuperAbilities[2]);
+        if (heroesHealth[runNum] < 100 && heroesHealth[3] > 0) {
+            heroesHealth[runNum] = heroesHealth[runNum] + medicHeal;
+            System.out.println("Medic healed " + heroesSuperAbilities[runNum]);
         }
     }
 
